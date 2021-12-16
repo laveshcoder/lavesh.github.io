@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width , initial-sacle=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <title> all products -lavesh store </title>
+    <link rel="stylesheet" href="5index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px" alt="logo">
+            </div>
+            <nav>
+                <ul id="menuitem">
+                    <li><a href="home">home</a></li>
+                    <li><a href="home">products</a></li>
+                    <li><a href="home">account</a></li>
+                    <li><a href="home">contact</a></li>
+                    <li><a href="home">about</a></li>
+
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="cart">
+            <img src="images/menu.png" class="menu-icon" onclick="lavesh()">
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <!-- cart product details -->
+
+  <!-- -------account page ------------- -->
+ <div class="account-page">
+     <div class="container">
+         <div class="row">
+             <div class="col-2">
+           <img src="images/image1.png" width="100%">      
+             </div>
+             <div class="col-2">
+               <div class="form-container">
+                  <div class="form-btn">
+                      <span  onclick="login()">Login</span>
+                      <span  onclick="reg()">Register</span>
+                      <hr id="indicator">
+                  </div>
+                 <form  id="loginform">
+                   <input type="text" placeholder="Username">  
+                   <input type="password" placeholder="Password">
+                   <button type="submit" class="btn" >Login</button>
+                   <a href="">Forgot password</a>
+                 </form>
+                 <form id="regform" >
+                    <input type="text" placeholder="Username">  
+                    <input type="email" placeholder="Email"> 
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn" >Register</button>
+                   
+                  </form>
+               </div>      
+                  </div>
+         </div>
+
+     </div>
+ </div>
+
+    <!-- -------footer----- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our app</h3>
+                    <p>Download app for android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>our purpose is to sustainbly make the pleasure and of sports accessible to the many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+        var menuitem = document.getElementById('menuitem')
+        menuitem.style.maxHeight = "0px"
+
+        function lavesh() {
+            if (menuitem.style.maxHeight == "0px") {
+                menuitem.style.maxHeight = "200px"
+            }
+            else {
+                menuitem.style.maxHeight = "0px"
+            }
+        }
+
+
+    </script>
+
+<script>
+
+
+    var loginform = document.getElementById('loginform');
+    var regform = document.getElementById('regform');
+    var indicator = document.getElementById('indicator');
+
+   function reg() {
+       regform.style.transform =" translateX(0px)";
+       loginform.style.transform =" translateX(0px)";
+       indicator.style.transform =" translateX(100px)";
+   }
+   function login() {
+       regform.style.transform =" translateX(300px)";
+       loginform.style.transform =" translateX(300px)";
+       indicator.style.transform =" translateX(0px)";
+   }
+
+</script>
+
+
+
+
+</body>
+
+</html>
